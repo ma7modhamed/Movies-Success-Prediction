@@ -1,0 +1,77 @@
+C:\Users\EngMahmoud\Anaconda3\envs\ml\python.exe "F:/Faculty of Computers and Informatics/4th Year/SC/Machine learning/ML Project/main.py"
+C:\Users\EngMahmoud\Anaconda3\envs\ml\lib\site-packages\sklearn\externals\joblib\__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+___________Linear Regression______________
+Intercept of linear regression model 6.517605004619711
+Mean Square Error 0.4541232507614781
+Score of linear regression 0.3839054925682617
+__________________________________________
+___________Decision Tree Regression______________
+mean squared error (Tree)=  0.34404881983690233
+Score =  0.5332399566979676
+__________________________________________
+Least MSE 0.34404881983690233
+The Best Model fitting the data is DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=10,
+                      min_samples_split=10, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=100, splitter='best')
+MSE 0.34404881983690233
+--------------------------------------------------
+------------------ Classification Model -------------------
+train after_pre= (3842, 567)
+test after pre= (961, 567)
+      ----------- KNN ------------
+total train = 0.22240281105041504
+total test = 1.6645770072937012
+Accuracy Knn :  50.57232049947971
+Confusion Matrix for tree : 
+[[  0  12   8]
+ [ 12 353 220]
+ [ 11 212 133]]
+      ------- Tree----------
+total test = 0.008973121643066406
+Accuracy tree :  85.95213319458897
+Confusion Matrix for tree : 
+[[ 13   7   0]
+ [  2 541  42]
+ [  2  82 272]]
+    ---------- SVM ------------
+total test = 2.177222490310669
+Accuracy :  79.81269510926118
+Confusion Matrix for Svm: 
+[[  3  16   1]
+ [  1 528  56]
+ [  0 120 236]]
+      ----- addabos tree ---------
+total test = 0.3402063846588135
+Accuracy addapost tree :  95.73361082206036
+    ------------ PCA ----------------
+train (3842, 507)
+test (961, 507)
+ ******** SVM _PCA :
+PCA--Accuracy svm :  84.59937565036421
+confusion_matrix :
+[[  2  16   2]
+ [  0 554  31]
+ [  0  99 257]]
+ ******** Tree _PCA :
+PCA--Accuracy tree :  91.15504682622269
+confusion_matrix :
+[[ 14   3   3]
+ [  6 541  38]
+ [  2  33 321]]
+ ******** KNN _PCA :
+PCA--Accuracy knn :  91.67533818938605
+confusion_matrix :
+[[ 16   4   0]
+ [  3 554  28]
+ [  2  43 311]]
+ ******** AdaBoost _PCA :
+PCA--Accuracy tree-adabost :  92.92403746097816
+confusion_matrix :
+[[ 15   4   1]
+ [  0 568  17]
+ [  0  46 310]]
+
+Process finished with exit code 0

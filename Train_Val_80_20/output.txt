@@ -1,0 +1,112 @@
+C:\Users\EngMahmoud\Anaconda3\envs\ml\python.exe "F:/Faculty of Computers and Informatics/4th Year/SC/Machine learning/ML/ML Project/main.py"
+C:\Users\EngMahmoud\Anaconda3\envs\ml\lib\site-packages\sklearn\externals\joblib\__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+cannot load json
+value is 1
+feature crew length is 760
+___________Linear Regression______________
+Intercept of linear regression model 6.539517834391317
+Mean Square Error 0.56671563183337
+Score of linear regression 0.32115203578112284
+R2 Score of Linear Regression 0.32115203578112284
+__________________________________________
+___________Decision Tree Regression______________
+mean squared error (Tree)=  0.5095966770707647
+Score =  0.38957274624126004
+R2 Score 0.38957274624126004
+__________________________________________
+Least MSE 0.5095966770707647
+The Best Model fitting the data is DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=10,
+                      min_samples_split=10, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=100, splitter='best')
+MSE 0.5095966770707647
+--------------------------------------------------
+------------------ Classification Model -------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+-------------------------------
+train after_pre= (3842, 569)
+test after pre= (961, 569)
+-------Logistic Regression-------
+total train = 0.6101007461547852
+Accuracy Logistic Regression :  74.0894901144641
+Confusion Matrix for Logistic Regression : 
+[[  8  17   0]
+ [  3 502  99]
+ [  6 124 202]]
+      ----------- KNN ------------
+total train = 0.18773913383483887
+total train = 0.23999309539794922
+total test = 5.335144519805908
+Accuracy Knn :  63.78772112382934
+Confusion Matrix for Knn : 
+[[  5  18   2]
+ [ 10 583  11]
+ [ 11 296  25]]
+      ------- Tree----------
+total train = 0.2135307788848877
+total test = 0.007300853729248047
+Accuracy tree :  71.90426638917793
+Confusion Matrix for tree : 
+[[  8  15   2]
+ [  4 476 124]
+ [  3 122 207]]
+    ---------- SVM ------------
+total train = 11.177357196807861
+total test = 2.0381481647491455
+Accuracy :  74.60978147762746
+Confusion Matrix for Svm: 
+[[  0  23   2]
+ [  1 520  83]
+ [  1 134 197]]
+      ----- addabos tree ---------
+total train = 11.597791194915771
+total test = 0.1555633544921875
+Accuracy addapost tree :  75.23413111342352
+    ------------ PCA ----------------
+train (3842, 510)
+test (961, 510)
+After Applying PCA With n_components =  0.98
+The data feature was (3842, 569) has reduced to be (3842, 510)
+ ******** SVM _PCA :
+(3842, 510)
+total train = 12.658542156219482
+PCA--Accuracy svm :  71.59209157127991
+confusion_matrix :
+[[  0  24   1]
+ [  0 536  68]
+ [  0 180 152]]
+ ******** Tree _PCA :
+total train = 3.4797523021698
+PCA--Accuracy tree :  56.399583766909466
+confusion_matrix :
+[[  4  16   5]
+ [ 22 398 184]
+ [ 10 182 140]]
+ ******** KNN _PCA :
+total train = 0.19799160957336426
+PCA--Accuracy knn :  58.376690946930275
+confusion_matrix :
+[[  6  18   1]
+ [ 29 424 151]
+ [ 13 188 131]]
+ ******** AdaBoost _PCA :
+total train = 109.54099607467651
+PCA--Accuracy tree-adabost :  63.683662851196665
+confusion_matrix :
+[[  3  21   1]
+ [  3 514  87]
+ [  1 236  95]]
